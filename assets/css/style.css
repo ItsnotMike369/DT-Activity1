@@ -36,6 +36,8 @@
     color: #fff;
     text-decoration: none;
   }
+
+  
   
   .hero {
     display: flex;
@@ -61,60 +63,117 @@
   
   .date-time #digital-clock {
     font-size: 3em;
-  }
-  
+  }  
 
-/* service */
-.container-services {
-  width: 60%;
-  margin: 80px;
-  padding: 10px;
-  background-color: #ffffff84;
-  border-radius: 5px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-.services {
-  display: flex;
-}
-
-.service {
-  width: 30%;
-  margin: 20px;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+/* About Us  */
+.container-about-us {
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.service img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  object-fit: cover;
+.container-about-us h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.about-content {
+  text-align: left;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #555;
+}
+
+.about-content p {
   margin-bottom: 15px;
 }
 
-.service h2 {
-  margin-bottom: 10px;
+.about-content strong {
+  color: #007bff;
 }
 
-.service p {
+
+/* service */
+.container-service {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.container-service h1 {
+  font-size: 2.5rem;
   margin-bottom: 20px;
+  color: #333;
 }
 
+/* Services grid layout */
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+/* Individual service card */
+.service {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Service image */
+.service img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Service title */
+.service h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+/* Service description */
+.service p {
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Button styles */
 .service button {
-  background-color: #4CAF50;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 10px 15px;
+  font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 .service button:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 /* Contact */
@@ -122,26 +181,27 @@
 .container-contact {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   max-width: 1200px;
-  width: 100%;
   margin: 0 auto;
   padding: 20px;
-  background-color: #ffffffb9;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  gap: 20px;
+  font-family: Arial, sans-serif;
 }
 
-.left, .right {
+/* Left section styling */
+.container-contact .left {
   flex: 1;
-  padding: 20px;
-  box-sizing: border-box;
   min-width: 300px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 24px;
+.container-contact .left h1 {
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: #333;
 }
 
 .input-field {
@@ -150,92 +210,113 @@ h1 {
 
 .input-field label {
   display: block;
+  font-size: 1rem;
   margin-bottom: 5px;
-  font-weight: bold;
+  color: #555;
 }
 
-.input-field input, .input-field textarea {
+.input-field input,
+.input-field textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
+  font-size: 1rem;
+  border: 1px solid #ddd;
   border-radius: 5px;
-  box-sizing: border-box;
+  outline: none;
 }
 
 .input-field textarea {
+  resize: vertical;
   height: 100px;
-  resize: none;
+}
+
+.input-field input:focus,
+.input-field textarea:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
 button-1 {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000;
+  font-size: 1rem;
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 button-1:hover {
-  background-color: #610d0d;
+  background-color: #0056b3;
+}
+
+/* Right section styling */
+.container-contact .right {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  text-align: left;
+  color: #333;
+}
+
+.container-contact .right h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.container-contact .right p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
 }
 
 .contact-info {
   margin-bottom: 15px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  color: #555;
 }
 
-.contact-info i {
+.contact-info .icon {
   margin-right: 10px;
-}
-
-.contact-info span {
-  font-weight: bold;
-}
-
-.contact-info a {
-  color: #3977b9;
-  text-decoration: none;
-}
-
-.contact-info a:hover {
-  text-decoration: underline;
+  font-size: 1.2rem;
+  color: #007bff;
 }
 
 .social-buttons {
   display: flex;
   gap: 10px;
+  margin-top: 20px;
 }
+
 .social-button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 40px;
   height: 40px;
+  background-color: #ddd;
   border-radius: 50%;
-  color: white;
   text-decoration: none;
-  font-size: 20px;
+  color: #333;
+  font-size: 1.2rem;
+  transition: background-color 0.3s, color 0.3s;
 }
-.facebook {
+
+.social-button:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.social-button.facebook:hover {
   background-color: #3b5998;
 }
-.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
-}
-.social-button:hover {
-  opacity: 0.8;
-}
 
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .left, .right {
-    min-width: 100%;
-  }
+.social-button.instagram:hover {
+  background-color: #e1306c;
 }
 
 
