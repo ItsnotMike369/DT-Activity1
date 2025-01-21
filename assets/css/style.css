@@ -18,7 +18,7 @@
     background-color: #35302f;
     color: #fff;
     position: sticky;
-    z-index: 1;
+    z-index: 10;
     top: 0;
   }
   
@@ -112,37 +112,274 @@
   }
 
 /* About Us  */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 7vmin;
+  text-align: center;
+  color: white;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.7); /* Add shadow for readability */
+  animation: fadeIn 1s ease-in-out;
+
+  
+}
+
+
+.wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 85vmin;
+  height: 65vmin;
+  margin: 2rem auto;
+  border: 8px solid;
+  border-image: linear-gradient(
+    -50deg,
+    #6a1b9a, /* Purple */
+    #4caf50, /* Green */
+    #2196f3, /* Blue */
+    #00e5ff, /* Light Blue */
+    #6a1b9a  /* Purple (repeating) */
+  ) 1; 
+  transition: 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute; /* Change position to absolute */
+  display: flex;
+  width: 100%;
+  height: 100%;
+  padding: 1rem 0.75rem;
+  background: url("https://i.pinimg.com/736x/52/9d/6a/529d6a7cbd0842ded0d385182e461948.jpg") no-repeat center center/cover;
+  background-size: cover;
+  transition: 0.4s ease-in-out;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.overlay .overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}
+
+
+
+.overlay-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vmin;
+  height: 100%;
+  padding: 0.5rem 0 0 0.5rem;
+  border: 3px solid;
+  border-image: linear-gradient(
+    to bottom,
+    #8e44ad 5%, /* Purple */
+    #2ecc71 35% 65%, /* Green */
+    #3498db 95% 95%
+  ) 0 0 0 100%;
+  transition: 0.3s ease-in-out 0.2s;
+  z-index: 1;
+}
+
+.overlay-content h1 {
+  color: #fff; /* Ensure text is readable */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds contrast for readability */
+  font-size: 2.5em; /* Adjust size for visibility */
+  transition: transform 0.3s ease-in-out; /* Smooth transformation */
+}
+
+.image-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vmin;
+  height: 100%;
+  background-image: linear-gradient(to right, #ffffff, #e0e0e0); /* Light gray to white gradient */
+  transition: 0.3s ease-in-out;
+}
+
+.text {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60vmin;
+  height: 100%;
+  padding: 3vmin 4vmin;
+  background: #fff;
+  box-shadow: inset 1px 1px 15px 0 rgba(0 0 0 / 0.4);
+  overflow-y: scroll;
+  transition: transform 0.3s ease-in-out; /* Add transition for smooth animation */
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Hover effects */
+.wrap:hover .overlay-content h1 {
+  transform: scale(1.2); /* Slightly enlarge the text */
+}
+
+.wrap:hover .text {
+  transform: scale(1.05); /* Slightly scale the text container for smooth visual effect */
+}
+
+.wrap:hover .overlay {
+  transform: translateX(-60vmin);
+}
+
+.wrap:hover .image-content {
+  width: 30vmin; /* Shrinks the image content */
+}
+
+.wrap:hover .overlay-content {
+  border: none;
+  transition-delay: 0.2s;
+  transform: translateX(60vmin); /* Moves the overlay to the right */
+}
+
+.wrap:hover .dots {
+  transform: translateX(1rem);
+}
+
+.wrap:hover .dots .dot {
+  background: white; /* Changes the color of the dots */
+}
+
 .container-about-us {
-  max-width: 800px;
+  max-width: 70%;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
-  font-family: Arial, sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Martel Sans", sans-serif;
+  background: linear-gradient(135deg, #f3f4f8, #e8eaf6); /* Soft gradient background */
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slide-up 0.7s ease-in-out;
+  position: relative; /* For positioning pseudo-elements */
+  z-index: 0;
 }
 
-.container-about-us h1 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+.container-about-us::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('https://i.pinimg.com/736x/e2/ef/ab/e2efab82fc40fe35d24da143c8931881.jpg') no-repeat center center/cover;
+  opacity: 0.1; /* Subtle background image */
+  z-index: -1; /* Keep it behind the content */
+}
+
+/* Animation keyframes */
+/* New animation for fade-in effect */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes slideIn {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Add fade-in and scaling animations to paragraphs */
+.container-about-us p {
+  animation: fadeIn 1.5s ease-in-out, slideUp 0.8s ease-out 0.5s;
+  line-height: 1.8;
+  font-size: 1.25em;
   color: #333;
+  margin-bottom: 1rem;
+  font-weight: 400;
+  transform: translateY(20px); /* Start from below */
+
 }
 
-.about-content {
-  text-align: left;
-  line-height: 1.6;
-  font-size: 1rem;
-  color: #555;
+.container-about-us p strong {
+  color: #3498db;
+  font-weight: bold;
+  font-size: 1.3em; /* Slightly larger */
+  text-transform: uppercase; /* Makes the strong text stand out more */
+  letter-spacing: 1px; /* Adds spacing for a clean look */
+  animation: fadeIn 2s ease-in-out 0.5s, colorPulse 2s ease-in-out infinite;
+  transform: scale(0.9);
 }
 
-.about-content p {
-  margin-bottom: 15px;
+/* Highlight Pulse Effect on Strong Text */
+@keyframes colorPulse {
+  0% { color: #8e44ad; }
+  50% { color: #2ecc71; } /* Darker shade for emphasis */
+  100% { color: #3498db; }
 }
 
-.about-content strong {
-  color: #007bff;
+
+
+/* Add Hover Effect on Strong Text */
+.container-about-us p strong:hover {
+  color: #2ecc71; /* Slightly darker color when hovered */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Adds shadow for emphasis */
+  transform: scale(1.05); /* Slightly increase size */
 }
+
+/* Enhanced Text Shadow for Paragraph */
+.container-about-us p {
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for text depth */
+}
+
+/* New styles for .inset, .dots, and .dot */
+.inset {
+  max-width: 50%;
+  margin: 0.25em 1em 1em 0;
+  border-radius: 0.25em;
+  float: left;
+}
+
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  right: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 55px;
+  height: 4vmin;
+  transition: 0.3s ease-in-out 0.3s;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  background: #2ecc71;
+  border: 1px solid whitesmoke;
+  border-radius: 50%;
+  transition: 0.3s ease-in-out 0.3s;
+}
+
+
 
 
 /* service */
