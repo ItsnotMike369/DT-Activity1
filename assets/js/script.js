@@ -47,3 +47,23 @@ function showSlider(type){
         next.click();
     }, timeAutoNext)
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const observerOptions = {
+      threshold: 0.1
+    };
+  
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+  
+    const elementsToAnimate = document.querySelectorAll('.footer-image-left img, .footer-image-right img, .footer-section');
+    elementsToAnimate.forEach(element => {
+      observer.observe(element);
+    });
+  });
