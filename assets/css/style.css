@@ -646,7 +646,7 @@
   align-items: center;
   background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white for modern look */
   padding: 20px;
-  margin: 20px auto;
+  margin: 10px auto;
   width: 100%; /* Full width */
   max-width: 1200px; /* Ensure the ad does not stretch beyond a max width */
   height: 500px; /* Fixed height for all ad boxes */
@@ -677,7 +677,7 @@
   margin: 0 30px;
   color: #000066; /* Dark blue text for better visibility */
   z-index: 1;
-  max-width: 45%; /* Ensure text section doesn't take more than half */
+  max-width: 65%; /* Ensure text section doesn't take more than half */
   overflow: hidden;
   height: 100%; /* Ensure text container fills the box */
 }
