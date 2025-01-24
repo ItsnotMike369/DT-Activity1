@@ -68,7 +68,7 @@
   
   .nav-links a:hover {
     background-color: #38345a; /* Dark background on hover */
-    color: #19c22a; /* White text on hover */
+    color: #ffffff; /* White text on hover */
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Subtle shadow effect */
     transform: translateY(-2px); /* Slight lift on hover */
   }
@@ -147,7 +147,7 @@
   }
   
   .hero button:hover {
-    background-color: #01ff45;
+    background-color: #1b3f9a;
 }
   
   .hero button:hover .arrow {
@@ -468,9 +468,9 @@
   transition: 0.5s;
 }
 .arrows button:hover {
-  background-color: rgb(81, 233, 57);
+  background-color: #1b3f9a;
   color: #fff;
-}
+} 
 
 .carousel .list .item:nth-child(1) {
   z-index: 1;
@@ -819,7 +819,7 @@
 .container-contact .left h1 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #01ff45;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -831,7 +831,7 @@
   display: block;
   font-size: 1rem;
   margin-bottom: 5px;
-  color: #01ff45;
+  color: #ffffff;
   font-weight: 700;
 }
 
@@ -878,7 +878,7 @@ button-1:hover {
   min-width: 300px;
   padding: 20px;
   text-align: left;
-  color: #01ff45;
+  color: #ffffff;
   font-weight: bolder;
 }
 
@@ -957,7 +957,7 @@ button-1:hover {
 .cta h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #01ff45;
+  color: #ffffff;
   margin-bottom: 20px;
 }
 
@@ -981,7 +981,7 @@ button-1:hover {
 .cta p {
   font-size: 20px;
   font-weight: 600;
-  color: #01ff45;
+  color: #ffffff;
   margin: 0;
 }
 
@@ -1023,14 +1023,14 @@ footer {
 .footer-image-right img:hover {
   transform: scale(1.1);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
-  border: 2px solid #01ff45; /* Hover border color */
+  border: 2px solid #c140c1 ; /* Hover border color */
 }
 
 .footer-image-left img:active,
 .footer-image-right img:active {
   transform: scale(1.05);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  border: 2px solid #01ff45; /* Active border color */
+  border: 2px solid #c140c1; /* Active border color */
 }
 
 .footer-links {
@@ -1050,7 +1050,7 @@ footer {
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 10px;
-  color: #01ff45; /* Heading color */
+  color: #ffffff; /* Heading color */
   position: relative;
 }
 
@@ -1062,7 +1062,7 @@ footer {
   bottom: -5px;
   width: 50px;
   height: 2px;
-  background-color: #01ff45; /* Underline color */
+  background-color: #c140c1; /* Underline color */
 }
 
 .footer-section ul {
@@ -1082,7 +1082,7 @@ footer {
 }
 
 .footer-section ul li a:hover {
-  color: #01ff45; /* Hover link color */
+  color: #c140c1; /* Hover link color */
   transform: translateX(5px);
 }
 
