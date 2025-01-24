@@ -19,7 +19,7 @@
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=MononoKuma/DT-Activity1)
 
-[![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
+
 
 ---
 
@@ -42,7 +42,7 @@
       </ol>
     </li>
     <li>
-      <a href="#rule,-practices-and-principles">Rules, Practices and Principles</a>
+      <a href="#rules-practices-and-principles">Rules, Practices and Principles</a>
     </li>
     <li>
       <a href="#resources">Resources</a>
@@ -50,26 +50,32 @@
   </ol>
 </details>
 
+
 ---
 
 ## Overview
 
 <!-- TODO: To be changed -->
 <!-- The following are just sample -->
-Description of the project in details.
+This project is a group effort to design a website for a client in the tech industry. The purpose of the project is to create a visually appealing and functional website that meets the client's needs and showcases their services effectively.
 
 Guiding Question:
 - What is the project
-- Whats the purpose
+  - This project is a group effort to design a website for a client in the tech industry.
+- What's the purpose
+  - The purpose of the project is to create a visually appealing and functional website that meets the client's needs and showcases their services effectively.
 - What are key components
-- What technology used and how it is used
+  - The key components of the project include:
+    - MultiPage Website/Single Page Website
+    - Parallax transition
+    - Transactional elements
 
 ### Key Components
 <!-- TODO: List of Key Components -->
 <!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- **MultiPage Website/Single Page Website**: The website includes multiple sections such as About Us, Services, Ads, Contact Us, and a Call to Action.
+- **Parallax Transition**: Smooth transitions between sections to enhance user experience.
+- **Transactional**: The website includes interactive elements like buttons and forms to engage users.
 
 ### Technology
 <!-- TODO: List of Technology Used -->
@@ -89,31 +95,45 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
-└─ assets
-|   └─ css
-|   |   └─ style.css
-|   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
-└─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
-|     └─ index.html
-└─ index.html
-└─ readme.md
+┣ 📂assets
+┃ ┣ 📂css
+┃ ┃ ┗ 📜style.css
+┃ ┣ 📂img
+┃ ┃ ┣ 📜About uss.jpg
+┃ ┃ ┣ 📜abstract.gif
+┃ ┃ ┣ 📜adbg.gif
+┃ ┃ ┣ 📜adbg.jpg
+┃ ┃ ┣ 📜BA1.png
+┃ ┃ ┣ 📜BA2.png
+┃ ┃ ┣ 📜background-gif.gif
+┃ ┃ ┣ 📜cassandra.png
+┃ ┃ ┣ 📜dynatrace.png
+┃ ┃ ┣ 📜gitkraken.jpg
+┃ ┃ ┣ 📜Gitkraken.png
+┃ ┃ ┣ 📜herogif.gif
+┃ ┃ ┣ 📜landingherogif.gif
+┃ ┃ ┣ 📜LogoIcon.png
+┃ ┃ ┣ 📜mission.jpg
+┃ ┃ ┣ 📜nyebe_white.png
+┃ ┃ ┣ 📜sql.jpg
+┃ ┃ ┣ 📜tools.png
+┃ ┃ ┣ 📜tools2.png
+┃ ┃ ┣ 📜tools3.png
+┃ ┃ ┗ 📜tools4.png
+┃ ┗ 📂js
+┃   ┗ 📜script.js
+┣ 📜index.html
+┣ 📜LICENSE
+┗ 📜readme.md
+
 ```
 
 ## Resources
 
 <!-- TODO: Add References -->
-| Title | Purpose | Link |
+
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| GitKraken | GitKraken is a cross-platform Git GUI client that simplifies Git workflows with a visual interface and integrations with popular Git hosting services. | [GitKraken](https://www.gitkraken.com/) |
+| Dynatrace | Dynatrace is an AI-powered software intelligence platform that provides real-time monitoring, analytics, and insights for cloud applications, infrastructure, and user experiences. | [Dynatrace](https://www.dynatrace.com/) |
+| Bootstrap | Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. | [Bootstrap](https://getbootstrap.com/) |
+| FontAwesome | FontAwesome is a font and icon toolkit based on CSS and Less. | [FontAwesome](https://fontawesome.com/) |
