@@ -67,3 +67,15 @@ document.addEventListener('DOMContentLoaded', function() {
       observer.observe(element);
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const title = document.getElementById('who-we-are-title');
+  
+    title.addEventListener('mouseover', function() {
+      title.style.animation = 'bounce 1s ease, colorChange 4s infinite';
+    });
+  
+    title.addEventListener('mouseout', function() {
+      title.style.animation = '';
+    });
+  });
