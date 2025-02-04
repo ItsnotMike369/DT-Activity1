@@ -1,385 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
 
-            <!-- CDNJS -->
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-            <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" defer></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" defer></script>
+  <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" defer></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 <body>
+    <body>
+        <header>
+          <img src="logo.png" alt="Logo">
+          <nav>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+              <li><a href="#" class="cta">Get Started</a></li>
+            </ul>
+          </nav>
+        </header>
 
-<!--Header Section -->
-  <header>
-    <nav class="navbar">
-      <div class="container">
-        <a href="#" class="logo">
-            <img src="./assets/img/LogoIcon.png" class="logo-img" alt="Logo" />
-        </a>
-        <ul class="nav-links">
-            <li><a href="#about-us">About Us</a></li>
-            <li><a href="#service-page">Services</a></li>
-            <li><a href="#contact-page">Contact Us</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+        <section class="hero">
+          <div class="hero-text">
+            <h1>Create a data-driven culture with BI for all</h1>
+            <p>Power BI is a data visualization tool that helps users analyze and visualize data to make better decisions. It's a cloud-based service that offers data analytics services, such as data preparation, data discovery, and data reporting.</p>
+            <a href="#" class="btn">Learn More</a>
+          </div>
+          <div class="hero-image">
+            <img src="./assets/img/PowerBi.gif" alt="PowerBi Image">
+          </div>
+        </section>
+        <section class="features">
+          <h2>Feature of Microsoft Power Bi</h2>
+          <div class="features-grid">
+            <div class="feature-card">
+              <img src="icon1.png" alt="Governed Source Icon" class="feature-icon">
+              <h3>Data Catalog</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon2.png" alt="Enterprise Scale Icon" class="feature-icon">
+              <h3>Data Management Gateway</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon3.png" alt="Data Experiences Icon" class="feature-icon">
+              <h3>Power BI Q&A</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon4.png" alt="Empower Data Icon" class="feature-icon">
+              <h3>Power BI Service</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon5.png" alt="Get Started Icon" class="feature-icon">
+              <h3>Power Query</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon6.png" alt="Embed Reports Icon" class="feature-icon">
+              <h3>Power Pivot</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon7.png" alt="Embed Reports Icon" class="feature-icon">
+              <h3>Power View</h3>
+              <p></p>
+            </div>
+            <div class="feature-card">
+              <img src="icon8.png" alt="Embed Reports Icon" class="feature-icon">
+              <h3>Power Map</h3>
+              <p></p>
+            </div>
+          </div>
+        </section>
 
-<!--Hero Section -->
-<!-- CSS: Fix sizing, change background, fix sizing of the button to fit the text--> 
-<section class="hero">
-  <div>
-    <h1 class="hero-title"><strong><i>"Innovating Today, Shaping Tomorrow."</i></strong></h1><br>
-  </div>
-  <div>
-    <button>
-      Learn More
-      <div class="arrow-wrapper">
-          <div class="arrow"></div>
-      </div>
-  </button>
-  </div>
-</section>
+        <section class="steps">
+          <h2>Advantages of Power BI</h2>
+          <div class="steps-grid">
+            <div class="step-card">
+              <h3>1</h3>
+            </div>
+            <div class="step-card">
+              <h3>2</h3>
+            </div>
+            <div class="step-card">
+              <h3>3</h3>
+            </div>
+            <div class="step-card">
+              <h3>4</h3>
+            </div>
+            <div class="step-card">
+              <h3>5</h3>
+            </div>
+            <div class="step-card">
+              <h3>6</h3>
+            </div>
+            <div class="step-card">
+              <h3>7</h3>
+            </div>
+          </div>
+        </section>
 
-<!-- About us -->
-<!-- CSS: Fix sizing, change background, and color palette-->
-<section id="about-us" class="about-us background-image">
-  <div class="about-us-container">
-    <div class="who-we-are">
-      <h2 id="who-we-are-title">Who We Are</h2>
-    </div>
-    <div class="card">
-      <img src="./assets/img/About uss.jpg" alt="About Us Image" class="card__image">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-      </svg>
-      <div class="card__content">
-        <p class="card__title">About Us</p>
-        <p class="card__description">John Marcus, the visionary behind TechVerse Innovations, is dedicated to simplifying technology for businesses. His mission is to make cutting-edge solutions like AI, Blockchain, and IoT accessible and affordable for small to medium-sized enterprises. By focusing on sustainability and ease of use, John aims to empower businesses to thrive in the digital age.</p>
-      </div>
-    </div>
-    <div class="card">
-      <img src="./assets/img/mission.jpg" alt="Mission Image" class="card__image">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-        <path d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"></path>
-      </svg>
-      <div class="card__content">
-        <p class="card__title">Mission</p>
-        <p class="card__description">The Company’s Mission: TechVerse Innovations is dedicated to empowering businesses with innovative and sustainable technology solutions. By leveraging cutting-edge technologies like Artificial Intelligence, Blockchain, and IoT, the company aims to simplify tech adoption for small to medium-sized enterprises, making advanced tools accessible and affordable. Their mission is to drive growth and success for businesses in the digital age while emphasizing sustainability and ease of use.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CSS: Fix sizing, change background, and color palette-->
-<!-- Service -->
-<section class="service-page" id="service-page">
-  <div class="carousel">
-    <img src="./assets/img/background-gif.gif" alt="" class="service_background">
-
-      <div class="list">
-          <div class="item">
-              <img src="./assets/img/tools.png">
-              <div class="content">
-                  <div class="title"></div><br>
-                  <div class="des">
-                    A comprehensive observability platform, New Relic offers APM, infrastructure monitoring, and log management to help teams monitor and improve their software performance.
-                  </div>
-                  <div class="buttons">
-                      <button>SEE MORE</button>
-                      <button>JOIN US</button>
-                  </div>
+        <section class="contact-page" id="contact-page">
+          <div class="container-contact">
+            <div class="left">
+              <h1>Send us a message</h1>
+                <div class="input-field">
+                  <label for="name">Name:</label>
+                  <input type="text" id="name" placeholder="Your name">
+                </div>
+                <div class="input-field">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" placeholder="Your email">
+                </div>
+                <div class="input-field">
+                  <label for="subject">Subject:</label>
+                  <input type="text" id="subject" placeholder="Subject of your message">
+                </div>
+                <div class="input-field">
+                  <label for="message">Message:</label>
+                  <textarea id="message" placeholder="Write your message here"></textarea>
+                </div>
+              <button-1>Send Message</button-1>
+            </div>
+            <div class="right">
+              <h1>Contact us</h1>
+              <p>I'm open for any suggestion or just to have a chat</p>
+              <div class="contact-info">
+                <i class="icon fas fa-map-marker-alt"></i>
+                <span>Address:</span> <br>
               </div>
-          </div>
-          <div class="item">
-              <img src="./assets/img/tools2.png">
-              <div class="content">
-                  <div class="title"></div><br>
-                  <div class="des">
-                    Known for its log management capabilities, Splunk also offers APM and infrastructure monitoring, providing insights into system performance and security.
-                  </div>
-                  <div class="buttons">
-                      <button>SEE MORE</button>
-                      <button>SUBSCRIBE</button>
-                  </div>
+              <div class="contact-info">
+                <i class="icon fas fa-mobile-alt"></i>
+                <span>Phone:</span>
               </div>
-          </div>
-          <div class="item">
-              <img src="./assets/img/tools3.png">
-              <div class="content">
-                  <div class="title"></div><br>
-                  <div class="des">
-                    An open-source APM solution, SigNoz provides application metrics, distributed tracing, and logging capabilities under a single dashboard.
-                  </div>
-                  <div class="buttons">
-                      <button>SEE MORE</button>
-                      <button>SUBSCRIBE</button>
-                  </div>
+              <div class="contact-info">
+                <i class="icon fas fa-envelope"></i>
+                <span>Email:</span> <a href="mailto:info@yoursite.com"></a>
               </div>
-          </div>
-          <div class="item">
-              <img src="./assets/img/tools4.png">
-              <div class="content">
-                  <div class="title"></div><br>
-                  <div class="des">
-                    A monitoring service for IT, Dev, and Ops teams, Datadog provides observability of your entire stack, offering features like infrastructure monitoring, application performance monitoring (APM), and log management
-                  </div>
-                  <div class="buttons">
-                      <button>SEE MORE</button>
-                      <button>SUBSCRIBE</button>
-                  </div>
+              <div class="social-buttons">
+                <a href="" class="social-button facebook" target="_blank">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="" class="social-button instagram" target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
               </div>
+            </div>
           </div>
-      </div>
-      <div class="thumbnail">
-          <div class="item">
-              <img src="./assets/img/tools.png">
-              <div class="content">
-                  <div class="title">
-                    New Relic
-                  </div>
-                  <br>
-                  <div class="description">
-                          
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="./assets/img/tools2.png">
-              <div class="content">
-                  <div class="title">
-                    Splunk
-                  </div>
-                  <br>
-                  <div class="description">
+       </section>
 
+        <footer class="footer">
+          <p>© 2025 TechVerse innovation</p>
+          <p>Terms & Conditions | Privacy Policy</p>
+        </footer>
 
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="./assets/img/tools3.png">
-              <div class="content">
-                  <div class="title">
-                    Signoz
-                  </div>
-                  <br>
-                  <div class="description">
-                          
-                  </div>
-              </div>
-          </div>
-          <div class="item">
-              <img src="./assets/img/tools4.png">
-              <div class="content">
-                  <div class="title">
-                    Data Dog
-                  </div>
-                  <br>
-                  <div class="description">
-                          
-                  </div>
-              </div>
-          </div>
-      </div>
-
-      <div class="arrows">
-          <button id="prev"><</button>
-          <button id="next">></button>
-      </div>
-      <div class="time"></div>
-  </div>
-  </section>
-
-  <!--Ads Section -->
-  <section class="ads-container">
-    <!-- First Ad Section -->
-    <div class="ads">
-      <div class="ads-text">
-        <h1>GitKraken</h1><br>
-        <p>by: Hamid Shojaee</p><br>
-        <p>GitKraken is a cross-platform Git GUI client that simplifies Git workflows with a visual interface and integrations with popular Git hosting services. GitKraken is free for non-commercial use.</p><br>
-        <a href="#">Read more</a>
-      </div>
-      <div class="ads-image">
-        <img src="./assets/img/Gitkraken.png" alt="GitKraken Image">
-      </div>
-    </div>
-  
-    <!-- Second Ad Section -->
-    <div class="ads">
-      <div class="ads-image">
-        <img src="./assets/img/dynatrace.png" alt="Dynatrace Image">
-      </div>
-      <div class="ads-text">
-        <h1>DynaTrace</h1><br>
-        <p>by: Bernd Greifeneder, Sok-Kheng Taing, and Hubert Gerstmayr</p><br>
-        <p>Dynatrace is an AI-powered software intelligence platform that provides real-time monitoring, analytics, and insights for cloud applications, infrastructure, and user experiences.</p><br>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-  
-    <!-- Third Ad Section (Only Text) -->
-    <div class="ads">
-      <div class="ads-text">
-        <h1>Why Choose Us?</h1><br>
-        <p>Our analytics tool stands out with real-time insights, AI-driven analytics, and seamless integration, enabling faster, data-driven decisions. It offers customizable reporting and an intuitive interface, making it accessible to all teams. With strong security and scalability, it helps businesses thrive in a dynamic market.  </p><br>
-        <a href="#">Read more</a>
-      </div>
-    </div>
-  
-    <!-- Fourth Ad Section (Two Images) -->
-    <div class="ads">
-      <div class="ads-image">
-        <img src="./assets/img/cassandra.png" alt="Cassandra Image">
-      </div>
-      <div class="ads-image">
-        <img src="./assets/img/sql.jpg" alt="SQL Image">
-      </div>
-    </div>
-  </section>
-
-
-<!--Contact Section -->
-<!-- CSS: Fix sizing, change background, and color palette-->
- <section class="contact-page" id="contact-page">
-    <div class="container-contact">
-      <div class="left">
-        <h1>Send us a message</h1>
-          <div class="input-field">
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Your name">
-          </div>
-          <div class="input-field">
-            <label for="email">Email:</label>
-            <input type="email" id="email" placeholder="Your email">
-          </div>
-          <div class="input-field">
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" placeholder="Subject of your message">
-          </div>
-          <div class="input-field">
-            <label for="message">Message:</label>
-            <textarea id="message" placeholder="Write your message here"></textarea>
-          </div>
-        <button-1>Send Message</button-1>
-      </div>
-      <div class="right">
-        <h1>Contact us</h1>
-        <p>I'm open for any suggestion or just to have a chat</p>
-        <div class="contact-info">
-          <i class="icon fas fa-map-marker-alt"></i>
-          <span>Address:</span> <br>
-        </div>
-        <div class="contact-info">
-          <i class="icon fas fa-mobile-alt"></i>
-          <span>Phone:</span>
-        </div>
-        <div class="contact-info">
-          <i class="icon fas fa-envelope"></i>
-          <span>Email:</span> <a href="mailto:info@yoursite.com"></a>
-        </div>
-        <div class="social-buttons">
-          <a href="" class="social-button facebook" target="_blank">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="" class="social-button instagram" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-        </div>
-      </div>
-    </div>
- </section>
-
-<!--Call to action Section -->
-<section class="cta">
-  <div class="cta-container">
-    <h1> Get actionable insights from your business data</h1>
-    <button class="cta-button">SIGN UP FOR FREE</button>
-    <p>15-day free trial, no credit card required</p>
-  </div>
-</section>
-
-<!--Footer Section -->
- <!-- CSS: Fix sizing, change background, and color palette-->
- <footer>
-  <div class="footer-container">
-    <div class="footer-image-left">
-      <img src="./assets/img/BA1.png" alt="PlaceHolder">
-    </div>
-    <div class="footer-links">
-      <div class="footer-section">
-        <h3>Products</h3>
-        <ul>
-          <li><a href="#">Cloud BI</a></li>
-          <li><a href="#">On-premise</a></li>
-          <li><a href="#">Embedded Analytics</a></li>
-          <li><a href="#">Data Preparation</a></li>
-          <li><a href="#">Data Connectors</a></li>
-          <li><a href="#">Marketplace Apps</a></li>
-          <li><a href="#">Mobile Apps</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Business Solutions</h3>
-        <ul>
-          <li><a href="#">Sales</a></li>
-          <li><a href="#">Marketing</a></li>
-          <li><a href="#">Finance</a></li>
-          <li><a href="#">HelpDesk</a></li>
-          <li><a href="#">HR/EX</a></li>
-          <li><a href="#">Project Management</a></li>
-          <li><a href="#">Social Media</a></li>
-          <li><a href="#">eCommerce</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Resources</h3>
-        <ul>
-          <li><a href="#">Sample Gallery</a></li>
-          <li><a href="#">Webinars</a></li>
-          <li><a href="#">Analyst Reports</a></li>
-          <li><a href="#">Blogs</a></li>
-          <li><a href="#">Glossary</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Newsletter</a></li>
-          <li><a href="#">Events</a></li>
-          <li><a href="#">Press Corner</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Learning & Assistance</h3>
-        <ul>
-          <li><a href="#">Help Center</a></li>
-          <li><a href="#">Video Demos</a></li>
-          <li><a href="#">User Forums</a></li>
-          <li><a href="#">API Support for Developers</a></li>
-          <li><a href="#">Free Virtual Classroom Training</a></li>
-          <li><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="footer-section">
-        <h3>Getting Started</h3>
-        <ul>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-image-right">
-      <img src="./assets/img/BA2.png" alt="PlaceHolder">
-    </div>
-  </div>
-</footer>
-<script src="./assets/js/script.js"></script>
+      </body>
 </body>
 </html>
